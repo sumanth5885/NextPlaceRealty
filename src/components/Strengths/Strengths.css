@@ -1,0 +1,91 @@
+.strengths {
+  box-shadow: 5px 5px 10px black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.strengths h2 {
+  color: #003049;
+  font-size: 35px;
+  font-weight: 800;
+}
+.strengths-content {
+  width: 100%;
+  height: 500px;
+  background-image: url('../../assets/strenght.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  
+}
+.strengths-content .strength-card {
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: #33516148;
+  backdrop-filter: blur(50px);
+  font-weight: 600;
+  color: #003049;
+  /* transform: translateX(500px); */
+  transition: 2s;
+}
+.strengths-content .strength-card.animate {
+  /* animations */
+  animation-name: strength-animate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+/* animations  */
+
+@keyframes strength-animate {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 786px) {
+  .strengths h2 {
+    font-size: 25px;
+    margin-bottom: -20px;
+  }
+  .strengths-content {
+    gap: 0px;
+  }
+  .strengths-content .strength-card {
+    font-size: 12px;
+    word-break: break-all;
+  }
+}
+@media (max-width: 600px) {
+  .strengths h2 {
+    font-size: 20px;
+  }
+  .strengths-content .strength-card {
+    width: 95%;
+  }
+  .strengths-content .strength-card {
+    font-size: 11px;
+  }
+}

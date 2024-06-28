@@ -1,0 +1,38 @@
+.footer {
+  width: 97%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  /* background-color: #003049; */
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 389px) {
+  .footer {
+    font-size: 11px;
+  }
+}
+@media (max-width: 333px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 313px) {
+  .footer {
+    font-size: 9px;
+  }
+}

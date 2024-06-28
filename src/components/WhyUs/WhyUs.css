@@ -1,0 +1,81 @@
+.why-us {
+  width: 97%;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  padding: 20px;
+  opacity: 0.3;
+}
+.why-us.animate {
+  /* animations */
+  animation-name: why-us-animate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.why-us h2 {
+  font-size: 35px;
+  font-weight: 800;
+  color: #003049;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.why-us-content {
+  display: flex;
+  gap: 20px;
+  color: rgba(0, 0, 0, 0.582);
+  font-size: 14px;
+}
+.why-us-content ul {
+  list-style: none;
+  line-height: 2;
+}
+.why-us-content img {
+  border-radius: 5px;
+}
+
+
+/* Animations */
+
+@keyframes why-us-animate {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+  .why-us-content img {
+    display: none;
+  }
+}
+@media (max-width: 885px) {
+  .why-us h2 {
+    font-size: 20px;
+  }
+  .why-us-content ul {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .why-us h2 {
+    font-size: 17px;
+  }
+  .why-us-content ul {
+    font-size: 13px;
+  }
+}
+@media (max-width: 350px) {
+  .why-us h2 {
+    font-size: 14px;
+  }
+  .why-us-content ul {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,25 @@
+.hero img{
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+.hero.animate {
+  /* animations */
+  animation-name: hero-animate;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+/* Animations */
+
+@keyframes hero-animate {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

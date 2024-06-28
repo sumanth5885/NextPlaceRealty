@@ -1,0 +1,102 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  gap: 20px;
+}
+.introduction h2 {
+  transform: translateX(500px);
+  font-weight: 800;
+  font-size: 36px;
+  color: #003049;
+}
+.introduction h2.intro-animate {
+  animation-name:  intro-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.introduction p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #463f3ad4;
+}
+.introduction p.intro-animate {
+  animation-name:  para-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.introduction span {
+  color: #f95738;
+}
+
+
+/* animations */
+
+@keyframes intro-animation {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes para-animation {
+  0% {
+    /* transform: translateX(-500px); */
+    opacity: 0;
+  }
+  100% {
+    /* transform: translateX(0); */
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 865px) {
+  .introduction h2 {
+    font-size: 30px;
+  }
+  .introduction p {
+    font-size: 14px;
+    word-break: break-all;
+  }
+}
+@media (max-width: 714px) {
+  .introduction h2 {
+    font-size: 24px;
+  }
+  .introduction p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 570px) {
+  .introduction {
+    gap: 14px;
+  }
+  .introduction h2 {
+    font-size: 18px;
+  }
+  .introduction p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 432px) {
+  
+  .introduction h2 {
+    font-size: 14px;
+  }
+  .introduction p {
+    font-size: 10px;
+  }
+}

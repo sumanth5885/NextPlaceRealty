@@ -1,0 +1,135 @@
+.our-speakers {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 97%;
+}
+.title {
+  text-align: center;
+  color: #003049;
+  font-size: 35px;
+  font-weight: 800;
+}
+.title.animate {
+  /* animations */
+  animation-name: speaker-title;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.our-speakers img {
+  width: 200px;
+  border-radius: 10px;
+  opacity: 0;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  box-shadow: 6px 6px 10px black;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.505);
+  border-radius: 5px;
+
+}
+.card:hover {
+  background-color: #002f4972;
+  transition: 0.3s;
+}
+img.animate {
+  /* animations */
+  animation-name: speaker-card;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.card p h1 {
+  margin-bottom: 10px;
+}
+
+/* animations  */
+
+@keyframes speaker-title {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes speaker-card {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 746px) {
+  .title {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 715px) {
+  .title {
+    font-size: 28px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card p {
+    font-size: 12px;
+    word-break: break-all;
+    line-height: 1.5;
+  }
+  .card p h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .our-speakers img {
+    width: 300px;
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 15px;
+  }
+  .card p {
+    font-size: 10px;
+  }
+  .card p h1 {
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 353px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: -20px;
+  }
+  .card p {
+    font-size: 11px;
+    word-break: break-all;
+    line-height: 1.5;
+  }
+  .card p h1 {
+    font-size: 17px;
+  }
+  .our-speakers img {
+    width: 200px;
+  }
+}

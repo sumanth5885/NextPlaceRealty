@@ -1,0 +1,102 @@
+.digital-marketing {
+  width: 97%;
+  padding: 25px 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  opacity: 0;
+}
+.digital-marketing.animate {
+  /* animations */
+  animation-name: digital-animate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+.digital-marketing h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  color: #003049;
+  margin-bottom: 20px;
+}
+.digital-marketing-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  color: rgba(0, 0, 0, 0.603);
+  font-size: 14px;
+}
+.digital-marketing-content img {
+  border-radius: 5px;
+}
+
+
+/* Animations */
+
+@keyframes digital-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 984px) {
+  .digital-marketing h2 {
+    font-size: 25px;
+  }
+  .digital-marketing-content {
+    font-size: 13px;
+  }
+  .digital-marketing-content img {
+    width: 230px;
+  }
+}
+@media (max-width: 800px) {
+  .digital-marketing h2 {
+    font-size: 20px;
+  }
+  .digital-marketing-content {
+    font-size: 12px;
+  }
+  .digital-marketing-content img {
+    width: 200px;
+  }
+}
+@media (max-width: 624px) {
+  .digital-marketing h2 {
+    font-size: 20px;
+  }
+  .digital-marketing-content {
+    font-size: 11px;
+  }
+  .digital-marketing-content img {
+    width: 180px;
+  }
+}
+@media (max-width: 547px) {
+  .digital-marketing-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .digital-marketing-content img {
+    width: 300px;
+  }
+}
+@media (max-width: 369px) {
+  .digital-marketing-content img {
+    width: 250px;
+  }
+}
+@media (max-width: 310px) {
+  .digital-marketing-content img {
+    width: 190px;
+  }
+}

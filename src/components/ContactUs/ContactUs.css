@@ -1,0 +1,149 @@
+.contact-us {
+  background-image: url("../../assets/contact_us.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* object-fit: cover; */
+
+  background-clip: border-box;
+  width: 97%;
+  margin: -10px auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 80vh; */
+  /* height: 440px; */
+}
+.contact-left {
+  background-color: rgba(240, 248, 255, 0.484);
+  backdrop-filter: blur(10px);
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 470px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-left .contact-feild {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+  gap: 7px;
+}
+.contact-feild h3 {
+  color: rgba(0, 0, 0, 0.648);
+}
+.contact-feild p {
+  color: rgb(107, 93, 93);
+  font-size: 14px;
+}
+.contact-right {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.422);
+  backdrop-filter: blur(10px);
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 470px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+}
+.contact-right h2 {
+  text-align: center;
+}
+.contact-right form input,
+textarea {
+  width: 80%;
+  border-radius: 7px;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.381);
+}
+.contact-right form textarea {
+  min-height: 150px;
+  resize: none;
+}
+.contact-right form button {
+  width: 80%;
+  padding: 12px 15px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: rgb(245, 106, 0);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Media Queries */
+
+@media (max-width: 989px) {
+  .contact-us {
+    margin: 0px auto;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .contact-left {
+    gap: 10px;
+  }
+  .contact-right form input::placeholder {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.422);
+  }
+}
+@media (max-width: 750px) {
+  .contact-left {
+    flex-basis: 10%;
+  }
+  .contact-left h3 {
+    font-size: 13px;
+  }
+  .contact-left p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 673px) {
+  .contact-us {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-left {
+    order: 2;
+    width: 100%;
+    gap: 10px;
+    box-shadow: 5px 5px 10px black;
+  }
+  .contact-right {
+    order: 1;
+    margin-top: -15px;
+    width: 100%;
+    gap: 10px;
+  }
+  .contact-right form {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (max-width: 387px) {
+  .contact-right form input,
+  textarea {
+    width: 100%;
+  }
+}
