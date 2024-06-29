@@ -75,7 +75,7 @@
 
 @keyframes mission-animate {
   0% {
-    transform: translateX(320px);
+    transform: translateX(0);
   }
   80% {
     transform: translateX(-20px);
@@ -86,7 +86,7 @@
 }
 @keyframes vision-animate {
   0% {
-    transform: translateX(0px);
+    transform: translateX(180px);
   }
   80% {
     transform: translateX(-20px);
