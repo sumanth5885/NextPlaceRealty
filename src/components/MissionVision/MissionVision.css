@@ -36,7 +36,7 @@
 }
 .mission{
   background-color: #0050b9;
-  transform: translateX(520px);
+  transform: translateX(320px);
   transition: 1s;
 }
 .mission.animate {
@@ -75,7 +75,7 @@
 
 @keyframes mission-animate {
   0% {
-    transform: translateX(520px);
+    transform: translateX(320px);
   }
   80% {
     transform: translateX(-20px);
