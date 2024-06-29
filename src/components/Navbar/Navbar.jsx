@@ -26,6 +26,8 @@ const Navbar = () => {
     showMenu ? setShowMenu(false) : setShowMenu(true);
   };
 
+  
+
   return (
     <div className={`navbar ${isScrolling ? "dark-nav" : ""}`}>
       <div className="nav-left">
@@ -36,7 +38,7 @@ const Navbar = () => {
           <Link to="/">
             <li
               className={active === "home" ? "active" : ""}
-              onClick={() => {setActive("home"); window.scrollTo(0,0)}}
+              onClick={() => {setActive("home"); window.scrollTo(0,0); setShowMenu(false)}}
             >
               Home
             </li>
@@ -45,7 +47,7 @@ const Navbar = () => {
           <Link to="/about">
             <li
               className={active === "about-us" ? "active" : ""}
-              onClick={() => {setActive("about-us"); window.scrollTo(0, 0)}}
+              onClick={() => {setActive("about-us"); window.scrollTo(0, 0); setShowMenu(false)}}
             >
               About us
             </li>
@@ -54,7 +56,7 @@ const Navbar = () => {
           <Link to="/digital-marketing">
             <li
               className={active === "digital-marketing" ? "active" : ""}
-              onClick={() => {setActive("digital-marketing"); window.scrollTo(0, 0)}}
+              onClick={() => {setActive("digital-marketing"); window.scrollTo(0, 0); setShowMenu(false)}}
             >
               Digital Marketing
             </li>
@@ -63,7 +65,7 @@ const Navbar = () => {
           <Link to="/why-us">
             <li
               className={active === "why-us" ? "active" : ""}
-              onClick={() => {setActive("why-us"); window.scrollTo(0, 0)}}
+              onClick={() => {setActive("why-us"); window.scrollTo(0, 0); setShowMenu(false)}}
             >
               Why us?
             </li>
