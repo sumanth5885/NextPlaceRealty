@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        <FaRegCopyright size={12}/> 2024 NextPlaceRealty All rights reserved
+        <FaRegCopyright size={12}/> 2024 NexPlaceRealty All rights reserved
       </p>
       <p className="social-media">
         <a href="https://www.instagram.com/nexplace_realty?igsh=cHpuOHdyeDM1eWNh" target="_blank">

@@ -1,5 +1,5 @@
 import'./Hero.css'
-import next_place_hero from '../../assets/next_place_hero.jpg'
+import next_place_hero from '../../assets/nex_place_hero.jpg'
 import { useEffect, useRef } from 'react'
 
 const Hero = () => {
